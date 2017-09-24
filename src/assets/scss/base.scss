@@ -1,0 +1,102 @@
+// //业务无关的  可重用且复用频率高的class基础类 
+
+// //背景图片居中自适应裁剪
+// .bg-center{
+//     background-position:center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
+
+// //transform-core 水平垂直居中
+// .transform-core {
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+
+.flex-y {
+    display: flex;
+    flex-direction: column;
+}
+
+// //主轴和交叉轴的排列方式组合  遍历输出  如 start-start  center-stretch
+// $main-axis:(start:"flex-start", end:"flex-end", center:"center", between:"space-between", around:"space-around");
+// $cross-axis:(start:"flex-start", end:"flex-end", center:"center", baseline:"baseline", stretch:"stretch");
+// @each $main-key,
+// $main-val in $main-axis {
+//     @each $cross-key,
+//     $cross-val in $cross-axis {
+//         .#{$main-key}-#{$cross-key} {
+//             justify-content:#{$main-val};
+//             align-items: #{$cross-val};
+//         }
+//     }
+// }
+
+// .self-start {
+//     align-self: flex-start;
+// }
+
+// .self-end {
+//     align-self: flex-end;
+// }
+
+// .grow-1 {
+//     flex-grow: 1;
+// }
+// .shrink-0{
+//     flex-shrink:0;
+// }
+//水平垂直居中(需知道父元素宽高)
+.flex-center{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.ov-elp {
+    word-break: break-all;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ov-elp2 {
+    //最多显示两行 多余...
+    // word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.flex-y{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.align-start{
+    align-items: flex-start;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+//水平垂直居中（独立于父元素,用于遮罩层中的元素）
+.xy-center{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}

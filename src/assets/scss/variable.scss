@@ -1,0 +1,64 @@
+$prefix:'x-';
+$header-height:0.5rem;
+$header-font-size:18px;
+$header-bgc:red;
+
+$body-padding:0.1rem;
+$body-bgc:#f9fafc;
+$body-font-size:14px;
+
+$link-width:30%;
+$link-height:0.4rem;
+$link-font-size:0.16rem;
+$link-font-color:'green';
+
+
+//常用基础类
+.flex-between{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.flex-center{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.ov-elp {
+    word-break: break-all;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ov-elp2 {
+    //最多显示两行 多余...
+    // word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.flex-y{
+    display:flex;
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.align-start{
+    align-items: flex-start;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
