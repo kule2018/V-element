@@ -6,7 +6,7 @@
 
 ``` bash
 # install dependencies
-npm install -g -i -3
+npm install -g -i -3 -4
 
 # serve with hot reload at localhost:8080
 npm run dev
